@@ -1,0 +1,14 @@
+﻿# ÄÃ¢y lÃ  máº«u cáº¥u hÃ¬nh. Week02 tá»± táº¡o báº£n cÃ³ Ä‘Æ°á»ng dáº«n thá»±c táº¿ táº¡i WRITE_ROOT/configs/.
+# KhÃ´ng dÃ¹ng trá»±c tiáº¿p file nÃ y Ä‘á»ƒ train khi chÆ°a cháº¡y Week02.
+path: datasets/detection_yolov8_neu/data/NEU-DET
+train: outputs/week02_detection/splits/train.txt
+val: outputs/week02_detection/splits/val.txt
+test: outputs/week02_detection/splits/test.txt
+names:
+  0: crazing
+  1: inclusion
+  2: patches
+  3: pitted_surface
+  4: rolled-in_scale
+  5: scratches
+

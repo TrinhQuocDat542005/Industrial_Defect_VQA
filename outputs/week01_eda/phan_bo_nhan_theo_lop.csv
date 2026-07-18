@@ -1,0 +1,13 @@
+tap_du_lieu,class_id,class_name_vi,so_bounding_box
+test,0,Nứt rạn,79
+test,1,Tạp chất lẫn,89
+test,2,Vết vá,99
+test,3,Rỗ bề mặt,46
+test,4,Vảy cán,69
+test,5,Trầy xước,64
+train,0,Nứt rạn,610
+train,1,Tạp chất lẫn,922
+train,2,Vết vá,782
+train,3,Rỗ bề mặt,386
+train,4,Vảy cán,559
+train,5,Trầy xước,484

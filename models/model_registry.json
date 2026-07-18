@@ -1,0 +1,38 @@
+{
+  "project": "Industrial_Defect_VQA",
+  "models": [
+    {
+      "name": "YOLOv8 Detection",
+      "architecture": "YOLOv8",
+      "task": "Phát hiện lỗi bề mặt",
+      "dataset": "NEU Surface Defect Database",
+      "used_in": [
+        "Week02"
+      ],
+      "checkpoint_path": "outputs/week02_detection/weights/best.pt"
+    },
+    {
+      "name": "U-Net Segmentation",
+      "architecture": "UNetSmall",
+      "task": "Phân vùng lỗi mức pixel",
+      "dataset": "MVTec AD - bottle",
+      "used_in": [
+        "Week03"
+      ],
+      "checkpoint_path": "outputs/week03_segmentation/checkpoints/unet_bottle_best.pt",
+      "postprocess_config": "outputs/week03_segmentation/best_postprocess_config.json"
+    },
+    {
+      "name": "Fusion VQA",
+      "architecture": "TinyViT visual encoder + Transformer text encoder + Fusion MLP",
+      "task": "Caption có cấu trúc và VQA đa phương thức",
+      "dataset": "MVTec AD - bottle",
+      "used_in": [
+        "Week04"
+      ],
+      "checkpoint_path": "outputs/week04_multimodal/fusion_vqa.pt",
+      "mask_source": "unet_predicted",
+      "quality_decision_rule": "segmentation_safety_gate"
+    }
+  ]
+}

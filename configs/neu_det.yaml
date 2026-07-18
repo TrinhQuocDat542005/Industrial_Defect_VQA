@@ -1,0 +1,13 @@
+﻿# Máº«u cáº¥u hÃ¬nh. Notebook Tuáº§n 1 tá»± táº¡o YAML Ä‘Æ°á»ng dáº«n thá»±c táº¿ á»Ÿ thÆ° má»¥c cÃ³ quyá»n ghi.
+path: datasets/detection_yolov8_neu/data/NEU-DET
+train: train/images
+val: test/images
+test: test/images
+names:
+  0: crazing
+  1: inclusion
+  2: patches
+  3: pitted_surface
+  4: rolled-in_scale
+  5: scratches
+

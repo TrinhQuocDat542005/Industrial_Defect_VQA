@@ -1,0 +1,27 @@
+﻿{
+  "project": "Industrial_Defect_VQA",
+  "datasets": [
+    {
+      "name": "NEU Surface Defect Database",
+      "task": "PhÃ¡t hiá»‡n lá»—i bá» máº·t thÃ©p",
+      "used_in": [
+        "Week01",
+        "Week02"
+      ],
+      "local_path": "datasets/detection_yolov8_neu/data/NEU-DET",
+      "included_in_submission": true,
+      "notes": "DÃ¹ng cho YOLOv8 Detection vá»›i cÃ¡c lá»—i nhÆ° ná»©t ráº¡n, táº¡p cháº¥t láº«n, váº¿t vÃ¡, rá»— bá» máº·t, váº£y cÃ¡n vÃ  tráº§y xÆ°á»›c."
+    },
+    {
+      "name": "MVTec AD - bottle",
+      "task": "PhÃ¢n vÃ¹ng lá»—i, Caption cÃ³ cáº¥u trÃºc vÃ  VQA",
+      "used_in": [
+        "Week03",
+        "Week04"
+      ],
+      "local_path": "datasets/mvtec_ad/bottle",
+      "included_in_submission": false,
+      "notes": "Dataset lá»›n, Ä‘Æ°á»£c cung cáº¥p qua Kaggle Input hoáº·c chuáº©n bá»‹ báº±ng scripts/tai_mvtec_bottle.py. Checkpoint vÃ  output thá»±c nghiá»‡m Ä‘Ã£ náº±m trong outputs/."
+    }
+  ]
+}

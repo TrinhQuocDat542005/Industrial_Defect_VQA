@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.idea/
+.venv/
+venv/
+data/mvtec_ad/
+
+# Ignore backups
+outputs/*_backup*
+
+# Ignore raw dataset files (keep configurations and sample images)
+datasets/detection_yolov8_neu/data/
+
+# Ignore training outputs but keep the final model weights
+outputs/week02_detection/*
+!outputs/week02_detection/weights/
+!outputs/week02_detection/weights/best.pt
+
+outputs/week03_segmentation/*
+!outputs/week03_segmentation/checkpoints/
+!outputs/week03_segmentation/checkpoints/unet_bottle_best.pt
+
+outputs/week04_multimodal/*
+!outputs/week04_multimodal/fusion_vqa.pt
